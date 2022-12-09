@@ -19,10 +19,10 @@ data = copy.deepcopy(load_data(df))
 
 data['Date'] = pd.to_datetime(data['Date'], format='%Y-%m-%d')
 
+sns.set()
 st.subheader("Daily Device Installs in November 20222")
 fig1, ax1 = plt.subplots(figsize=(20,5))
 sns.lineplot(x=data["Date"], data=data, y=data["Daily Device Installs"])
-sns.set()
 st.pyplot(fig1)
 
 st.subheader("Daily User Installs in November 20222")
