@@ -49,12 +49,6 @@ sns.lineplot(x=data["Date"], data=data, y=data["Install events"])
 sns.set()
 st.pyplot(fig5)
 
-st.subheader("Install events in November 20222")
-fig5, ax5 = plt.subplots(figsize=(20,5))
-sns.lineplot(x=data["Date"], data=data, y=data["Install events"])
-sns.set()
-st.pyplot(fig5)
-
 st.subheader("Update events in November 20222")
 fig6, ax6 = plt.subplots(figsize=(20,5))
 sns.lineplot(x=data["Date"], data=data, y=data["Update events"])
